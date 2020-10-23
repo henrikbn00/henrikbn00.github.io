@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="no_NO" ng-app="app">
+						
+		<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+		<meta charset="utf-8" />
+		<base href="/">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+   		<title> FNs bærekraftsmål </title>
+		<meta name="description" content="                
+Dette tverrfaglige undervisningsopplegget inneholder 5 ulike læringsaktiviteter som har til felles at elevene skal gå i dybden, utforske, sammenligne og reflektere rundt FNs bærekraftsmål og bærekraftig utvikling. Aktivitetene gir elevene gir god trening i de grunnleggende ferdighetene, samt muntlig kommunikasjon, undring og utforsking, og samfunnskritisk tenkning og sammenheng. Denne veiledningen inneholder en lærerveiledning og en egen, interaktiv side med elevoppgaver. Lærerveiledningen inneholder forklaringer og fasit til de ulike oppgavene, og nyttige tilleggsressurser til fordypning i de ulike temaene.
+
+    " />
+		
+		<!-- multidomain access -->
+		
+		<!-- open graph social meta -->
+                        <meta property="og:type" content="website" />
+    <meta property="og:title" content="FNs bærekraftsmål" />
+    <meta property="og:url" content="https://www.fn.no/Undervisning/VGS/fns-baerekraftsmaal" />
+            <meta property="og:description" content="
+Dette tverrfaglige undervisningsopplegget inneholder 5 ulike læringsaktiviteter som har til felles at elevene skal gå i dybden, utforske, sammenligne og reflektere rundt FNs bærekraftsmål og bærekraftig utvikling. Aktivitetene gir elevene gir god trening i de grunnleggende ferdighetene, samt muntlig kommunikasjon, undring og utforsking, og samfunnskritisk tenkning og sammenheng. Denne veiledningen inneholder en lærerveiledning og en egen, interaktiv side med elevoppgaver. Lærerveiledningen inneholder forklaringer og fasit til de ulike oppgavene, og nyttige tilleggsressurser til fordypning i de ulike temaene.
+" />
+                    <meta property="og:image" content="https://www.fn.no/var/globalis/storage/images/_aliases/image_medium/0/5/4/3/833450-19-nor-NO/Alle%20SDG%20farger%20%20Uten%20FN-logo.png" /><meta property="og:image:type" content="image/png" /><meta property="og:image:width" content="399" /><meta property="og:image:height" content="202" />
+       
+    	<!-- styling -->
+		            <link rel="stylesheet" href="/css/3b29615.css?v=4ba7cff" />
+    
+
+		<!-- javascripts -->
+			<script src="/js/e5f1919.js?v=4ba7cff"></script>
+
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".nav-contents").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
+
+
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-2651067-5']);
+        _gaq.push(['_setDomainName', 'www.fn.no']);
+        _gaq.push(['_addOrganic', 'gulesider', 'q']);
+        _gaq.push(['_addOrganic', 'kvasir', 'q']);
+        _gaq.push(['_addOrganic', 'sesam', 'q']);
+        _gaq.push(['_addOrganic', '1881', 'Query']);
+        _gaq.push(['_addOrganic', 'nettkatalogen', 'search']);
+        _gaq.push( ['_trackPageview'] );
+    </script>
+    
+    <script type="text/javascript">
+        ( function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ( 'https:' == document.location.protocol ? 'https://ssl' : 'http://www' ) + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        } )();
+    </script>
+
+<!-- hotjar - script  -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1488846,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+		  	</head>
+  	
+	<body class=""
+            ng-controller="pageController"
+            ng-class="{
+                'nav-site-is-visible'        : navSiteIsVisible,
+                'grid-overlay-is-visible'    : gridOverlayIsVisible,
+                'search-is-visible'          : searchIsVisible
+            }">
+
+        <!-- start search header -->
+    	<form class="site-search" action="/Soek" method="get">
+
+	<div class="site-search__wrap ng-cloak" ng-show="searchIsVisible">
+        <div class="grid">
+            <div class="grid__col-10--md  grid__col-9--lg">
+                <div class="grid__pad">
+                    <fieldset>
+                        <label class="site-search__label autocomplete">
+                            <input type="text" name="search" class="site-search__input" placeholder="Søk etter Land, Konflikt osv." ng-model="search" ng-change="autoComplete(search)" ng-blur="closeAutoComplete()" jb-rotating-placeholder autofocus autocomplete="off" ng-keydown='searchNavigateByKeys($event)'>
+                            <div class="autocomplete-items" ng-if="completing && !completingMain">
+                                <div ng-repeat="suggestion in suggestions" ng-model="suggestion" ng-click="autoCompleteSearch(suggestion)" ng-mouseover="autoCompleteHover($event)">[[suggestion]]</div>
+                            </div>                            
+                            <button class="site-search__button-search" type="submit">Søk</button>
+                        </label>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="grid__pad">
+            <div class="site-search__wrap-button">
+                <button
+                    type="button"
+                    class="site-search__button-toggle"
+                    scroll-spy="scrolledDown"
+                    scroll-offset="-80"
+                    scroll-top-trigger="true"
+                    scroll-keep-toggled="true"
+                    scroll-height-wrapper="false"
+                    data-content="Søk"
+                    data-content-open="Skjul"
+                    ng-class="{'is-scrolled-down' : scrolledDown, 'is-toggled':searchIsVisible}"
+                    ng-click="toggleSearch()">Søk</button>
+            </div>
+        </div>
+    </div>
+</form>
+        <!-- end search header  -->
+
+    	<!-- start header -->
+    	<header class="site-header " ng-controller="toggleController">		
+    		<div class="grid">
+
+    <div class="grid__col-4--md  grid__col-3--lg">
+        <div class="grid__pad">
+            <a class="site-header__branding" href="/">
+
+            	
+        			                	                    <img class="site-header__logo" src="/bundles/globalissite/images/branding/fn-sambandet-positive.svg">
+	                    			
+
+            </a>
+        </div>
+    </div>
+
+    <button class="nav-site-button-toggle" data-content="Meny" data-content-open="Skjul" ng-click="toggle()">Meny</button>
+
+                            <nav class="nav-site" ng-class="{'is-toggled' : isToggled}">
+    <div class="grid__pad">
+			        <div class="nav-site__list">
+					            	<a class="nav-site__link "  href="/Undervisning">Undervisning</a>
+	            	            	<a class="nav-site__link "  href="/tema">Tema</a>
+	            	            	<a class="nav-site__link "  href="/Land">Land</a>
+	            	            	<a class="nav-site__link "  href="/Statistikk">Statistikk</a>
+	            	            	<a class="nav-site__link "  href="/Konflikter">Konflikter</a>
+	            	            	<a class="nav-site__link "  href="/Verdenskart">Verdenskart</a>
+	            	            	<a class="nav-site__link "  href="/om-fn">Om FN</a>
+	            	            	<a class="nav-site__link "  href="/Nyheter">Nyheter</a>
+	            	            	<a class="nav-site__link "  href="/om-oss">Om oss</a>
+	            	            	<a class="nav-site__link "  href="/om-oss/una-norway">English</a>
+	            	        </div>
+            </div>
+</nav>
+
+</div>
+
+
+
+    	</header>
+        <div class="autocomplete-items autocomplete-main ng-cloak" ng-if="completing && completingMain">
+            <div ng-repeat="suggestion in suggestions" ng-model="suggestion" ng-click="autoCompleteSearch(suggestion)" ng-mouseover="autoCompleteHover()">[[suggestion]]</div>
+        </div>                            
+    	<!-- end header -->
+
+    	    <div    class="index-marker"
+            scroll-spy="fixIndexMarker"
+            scroll-offset="-1000"
+            scroll-top-trigger="true"
+            scroll-keep-toggled="true"
+            scroll-height-wrapper="false"
+            ng-class="{'is-toggled' : fixIndexMarker}">
+        <span class="index-marker__title"> FNs bærekraftsmål </span>
+    </div>
+    		
+    	<!-- start content -->
+    	<main class="page  ">
+    		                                                
+                <img src="https://www.fn.no/var/globalis/storage/images/_aliases/full_content/0/5/4/3/833450-19-nor-NO/Alle SDG farger  Uten FN-logo.png"
+                	                	                	 
+                		alt="FNs bærekraftsmål"
+                	                	 
+                		class="content-cover"
+                	                	/>
+    
+    <div class="fig-caption">
+                    <span class="ezstring-field">Høsten 2015 vedtok FN bærekraftsmålene. Disse 17 målene skal alle verdens land sørge for at vi når innen 2030.</span>
+            </div>
+
+    <div class="grid"> <!-- A row of browser-centered layout elements. Has inner gutters. -->
+        <header class="page-header  page-header--separator">
+            <div class="grid__col-8--md"> <!-- Percentage width of layout elements. -->
+                <div class="grid__pad"> <!-- Padding and gutters for low-level content wrappers. -->
+                                            	
+	<nav class="nav-breadcrumbs">
+					
+				<a href="/">FN-sambandet</a>
+				<span class="nav-breadcrumbs__divider">/</span>
+					
+				<a href="/Undervisning">Undervisning</a>
+				<span class="nav-breadcrumbs__divider">/</span>
+			</nav>
+
+                        
+                    <h1>FNs bærekraftsmål</h1>
+
+                                            <time class="page-header__date" datetime="2019-05-15">
+                            Sist oppdatert: 15.05.2019
+                        </time>
+                                        
+                                            <nav class="nav-education">
+                                                            <span class="nav-education__item  is-current">For lærere</span>
+                                                                    <a class="nav-education__item" href="/Undervisning/VGS/fns-baerekraftsmaal?for=elever">For elever</a>
+                                                                                    </nav>
+                                        
+                                                        
+       <div class="lede ezrichtext-field"><p>Dette tverrfaglige undervisningsopplegget inneholder 5 ulike l&aelig;ringsaktiviteter som&nbsp;har til felles at&nbsp;elevene skal g&aring; i dybden,&nbsp;utforske, sammenligne og reflektere rundt&nbsp;FNs b&aelig;rekraftsm&aring;l og b&aelig;rekraftig utvikling. Aktivitetene gir elevene&nbsp;gir god trening i&nbsp;de grunnleggende ferdighetene, samt muntlig kommunikasjon, undring og utforsking, og&nbsp;samfunnskritisk tenkning og sammenheng.&nbsp;Denne veiledningen inneholder en l&aelig;rerveiledning og en egen, interaktiv side med elevoppgaver. L&aelig;rerveiledningen inneholder forklaringer og fasit til de ulike oppgavene, og nyttige tilleggsressurser til fordypning i de ulike temaene.</p>
+</div>
+        
+
+                                    </div>
+            </div>
+
+                    </header>
+    </div>
+    
+    <div class="grid">
+        <div class="grid__col-4--lg">
+            <div class="grid__pad">
+                <div scroll-spy="fixNavContents" scroll-offset="0"
+                     scroll-top-trigger="true" scroll-keep-toggled="true"
+                     scroll-height-wrapper="false">
+                    <nav class="nav-contents" ng-class="fixNavContents ? 'is-fixed' : 'is-not-fixed'">
+                        <a class="nav-contents__link"  ng-repeat="anchor in anchors" ng-href="[[anchor.link]]" section-spy>[[anchor.label]]</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="grid__col-8--md  grid__col-push-4--md  grid__col-push-0--lg">
+            <div class="grid__pad content-body autoSubMenu">
+                                
+                                    <div class="info-educational">
+                        <dl class="list-definitions">
+                            <dt class="">Fag:</dt>
+                            <dd class="">Historie, Norsk, Politikk og menneskerettigheter, Religion og etikk, Samfunnskunnskap</dd>
+                            <dt class="">Klassetrinn:</dt>
+                            <dd class="">VGS</dd>
+                            <dt class="">Tema:</dt>
+                            <dd class="">Bærekraftig utvikling og FNs bærekraftsmål</dd>
+                                                            <dt class="">Tidsbruk:</dt>
+                                <dd class="">3-4 skoletimer (135 min-180 min)</dd>
+                                                                                </dl>
+                    </div>
+                
+                                                
+       <div class="ezrichtext-field"><p>Da FN jobbet frem FNs b&aelig;rekraftsm&aring;l i 2015, involverte FN&nbsp;et stort antall land og enkeltmennesker i prosessen. Ikke minst var det viktig &aring; involvere ungdom. I dette undervisningsopplegget f&aring;r elevene en innf&oslash;ring i b&aelig;rekraftsm&aring;lene, og prosessen fram mot lanseringen av dem.&nbsp;</p><p>Tidsbruken oppgitt for dette undervisningsopplegget er veiledende. Det g&aring;r fint an &aring; tilpasse opplegget til en enkelttime&nbsp;ved &aring; kutte ut noen av oppgavene.&nbsp;&nbsp;</p><p>Elevene trenger en egen&nbsp;PC med internettilgang for &aring; gjennomf&oslash;re opplegget.&nbsp;</p><h2>L&aelig;rerveiledning</h2><p>Begynn undervisningen med&nbsp;et PowerPoint-foredrag&nbsp;for elevene. Etter foredraget skal elevene lese en elevtekst. Etter at elevene har f&aring;tt en innf&oslash;ring&nbsp;i temaet gjennom foredrag og/eller tekst, skal de gj&oslash;re 5 oppgaver.&nbsp;</p><p>Under overskriften "Ressurser" lenger ned p&aring; nettsiden finner du b&aring;de&nbsp;PowerPoint-foredraget,&nbsp;elevteksten og de 5 oppgavene som pdf-filer. Elevteksten&nbsp;finnes ogs&aring; som en direktelenke under oppgave 1 p&aring; elevsiden "Til elever". Der finner du ogs&aring; resten av de 5 elevoppgavene.&nbsp;Du velger selv metode for hvordan elevteksten skal leses og hvordan de skriftlige oppgavene skal gjennomf&oslash;res. PowerPoint-filen inneholder&nbsp;stikkord og forslag til innhold,&nbsp;og det er lurt at du som l&aelig;rer leser igjennom og tilpasser PowerPoint-foredraget p&aring; forh&aring;nd for &aring; v&aelig;re best mulig forberedt til aktiviteten.&nbsp;</p><h3>Om oppgavene</h3><p>Oppgave 1&nbsp;er repetisjonssp&oslash;rsm&aring;l til elevteksten.&nbsp;Fasit til sp&oslash;rsm&aring;lene i oppgave 1 er:</p><ul><li>1A. Utvikling som im&oslash;tekommer dagens behov uten &aring; &oslash;delegge mulighetene for at kommende generasjoner skal f&aring; dekket sine behov</li><li>1B.&nbsp;B&aelig;rekraftsm&aring;lene gjelder for alle.</li><li>1C. Milj&oslash;, sosiale forhold og &oslash;konomi</li><li>1D. Over &aring;tte millioner mennesker besvarte MyWorld-unders&oslash;kelsen.</li><li>1E. Utdanning ble rangert h&oslash;yest.&nbsp;Unders&oslash;kelsen begrunner ikke rangeringen, s&aring; g&aring; gjerne igjennom elevsvarene sammen i plenum da det kan v&aelig;re mange ulike grunner til at utdanning var den prioriteringen som ble rangert h&oslash;yest.&nbsp;</li></ul><p>I oppgave to skal elevene analysere&nbsp;og reflektere rundt statistikk fra MyWorld-unders&oslash;kelsen. Elevene skal fordype&nbsp;seg i deler av bakgrunnsmaterialet for unders&oslash;kelsen, og studere&nbsp;forskjeller&nbsp;mellom Kamerun og Sverige ved &aring; se p&aring; b&aelig;rekraftsm&aring;l nr. 5 og nr. 16.&nbsp;Mot slutten av oppgaven skal elevene samarbeide med en eller to andre medelever&nbsp;og sammenligne resultatene fra de to landene.</p><ul><li><a href="http://data.myworld2015.org/" target="_blank">Her finner du MyWorld-unders&oslash;kelsen</a></li><li><a href="/om-fn/fns-baerekraftsmaal">Les om FNs B&aelig;rekraftsm&aring;l nr. 5 &laquo;Likestilling mellom kj&oslash;nnene&raquo;</a></li><li><a href="/om-fn/fns-baerekraftsmaal">Les om FNs b&aelig;rekraftsm&aring;l 16 &laquo;Fred og rettferdighet</a>&raquo;&nbsp;</li></ul><p>I oppgave tre skal elevene gj&oslash;re seg kjent med blogginnleggene p&aring; FN-sambandets ungdomspanel, og gi egne kommentarer p&aring; et selvvalgt blogginnlegg innenfor b&aelig;rekraftig utvikling.</p><p>I&nbsp;oppgave fire skal elevene &oslash;ve&nbsp;p&aring; &aring; skrive en tale til FNs generalforsamling. I elevenes oppgavetekst&nbsp;er det lenket til en side med tips til ulike retoriske grep og annen nyttig informasjon.</p><p>I den femte og siste oppgaven skal elevene selv&nbsp;ta MyWorld-unders&oslash;kelsen som ble brukt under utformingen av B&aelig;rekraftsm&aring;lene. De velger hvilke av m&aring;lene de mener er aller viktigst, og f&aring;r sine valg presentert i form av en kort video. Videoen kan gj&oslash;res personlig ved &aring; legge inn bilde og navn, og eventuelt postes&nbsp;p&aring; Facebook, Instagram, Twitter eller andre sosiale medier elevene bruker.</p>    
+<div  class="">
+    
+    
+            
+                
+    <div class="card card--toggle" ng-controller="toggleController" ng-class="{'is-toggled': isToggled}" tabindex="-1">
+        
+                    <button class="button  button--toggle  card__button-toggle" ng-click="toggle()" ng-class="{'is-toggled': isToggled}" style=""><span class="button--toggle__show">Vis alle</span><span class="button--toggle__hide">Skjul</span></button>
+        
+        <h3>Kompetansem&aring;l videreg&aring;ende skole</h3>
+        <div>            
+       <div class="ezrichtext-field"><p>Tverrfaglig tema:&nbsp;Demokrati og medborgerskap, b&aelig;rekraftig utvikling.</p><h5>Historie Vg1/Vg2</h5><ul><li>utforske&nbsp;fortiden ved &aring; stille sp&oslash;rsm&aring;l og innhente,&nbsp;tolke&nbsp;og&nbsp;bruke&nbsp;ulikt historisk materiale for &aring; finne svar.</li><li>vurdere&nbsp;hvordan mennesket har forholdt seg til naturen, forvaltet og brukt ressurser og&nbsp;bruke&nbsp;historiske perspektiver i samtale om b&aelig;rekraftige l&oslash;sninger.</li><li>reflektere&nbsp;over hvordan fortolkninger av fortiden er preget av n&aring;tidsforst&aring;else og forventninger til framtiden</li></ul><h5>Norsk - Vg1 SF</h5><ul><li>bruke&nbsp;ulike kilder p&aring; en kritisk, selvstendig og etterrettelig m&aring;te.&nbsp;</li><li>kombinere virkemidler og uttrykksformer kreativt i egen tekstskaping.</li><li>skrive tekster med god struktur og tekstbinding og mestre tegnsetting og rettskriving p&aring; hovedm&aring;l og sidem&aring;l.</li></ul><h5>Matematikk 2P</h5><ul><li>analysere og&nbsp;presentere&nbsp;funn i datasett fr&aring; lokalsamfunn og media.</li></ul><h5>Politikk og menneskerettigheter</h5><ul><li>anvende teorier, modeller og begreper for &aring; beskrive og sammenligne politiske styresett.</li><li>anvende kilder p&aring; en samfunnsvitenskapelig, kritisk og etterpr&oslash;vbar m&aring;te.</li></ul><h5>Religion og etikk</h5><ul><li>utforske&nbsp;og&nbsp;reflektere&nbsp;over eksistensielle sp&oslash;rsm&aring;l og svar</li></ul><h5>Samfunnskunnskap - Vg1/Vg2</h5><ul><li>utforske&nbsp;og&nbsp;presentere&nbsp;dagsaktuelle tema eller debatter ved &aring;&nbsp;bruke&nbsp;samfunnsfaglege metodar, kjelder og digitale ressursar, og argumentere for sine eigne og andre sine meiningar og verdiar.</li><li>dr&oslash;fte&nbsp;samanhengen mellom &oslash;konomisk vekst, levestandard og livskvalitet i eit globalt og berekraftig perspektiv.</li><li>utforske&nbsp;ei utfordring eller ein konflikt p&aring; lokalt, nasjonalt eller globalt niv&aring; og&nbsp;dr&oslash;fte&nbsp;korleis utfordringa eller konflikten p&aring;verkar forskjellige grupper.</li></ul><h5>Sosiologi og sosialantropologi</h5><ul><li>utforske og presentere aktuelle problemstillinger og anvende samfunnsvitenskapelig teori i dr&oslash;fting.</li><li>gj&oslash;re rede for hvordan akt&oslash;rer og strukturer er gjensidig avhengige av hverandre i et samfunn med b&aelig;rekraftig utvikling, og reflektere over hvordan samfunnet kan l&oslash;se sosiale, &oslash;konomiske og milj&oslash;messige utfordringer.</li><li>vurdere ulike perspektiver p&aring; makt og fordeling av goder og dr&oslash;fte rettferdighet og lagdeling i samfunn</li></ul>
+</div>
+        
+</div>
+    </div>
+    <div><br><br></div>
+
+
+</div>
+
+</div>
+        
+
+                
+                
+                                                            <h2>Ressurser</h2>
+                    
+                    <ul class="list-links">
+            <li class="list-links__item">
+            
+	
+		
+
+<a href="/content/download/29341/776596?version=1" class="list-links__link">Blogginnlegg, utskriftsvennlig (pdf)</a>
+        </li>
+            <li class="list-links__item">
+            
+	
+		
+
+<a href="/content/download/29339/776588?version=1" class="list-links__link">Elevtekst - Min verden, mine mål (pdf)</a>
+        </li>
+            <li class="list-links__item">
+            
+	
+		
+
+<a href="/content/download/29340/776592?version=1" class="list-links__link">Oppgaver - Min verden, mine mål (pdf)</a>
+        </li>
+            <li class="list-links__item">
+            
+	
+		
+
+<a href="/content/download/39493/960127?version=1" class="list-links__link">Presentasjon om FNs bærekraftsmål</a>
+        </li>
+    </ul>                    
+                
+                                    <h3>Stikkord</h3>
+                        <ul class="list-tags"><li class="list-tags__item"><span class="list-tags__text">bærekraftsmål</span></li><li class="list-tags__item"><span class="list-tags__text">medbestemmelse</span></li><li class="list-tags__item"><span class="list-tags__text">medborgerskap</span></li><li class="list-tags__item"><span class="list-tags__text">vgs</span></li><li class="list-tags__item"><span class="list-tags__text">videregående</span></li></ul>
+                
+                                                            <h3>Spørsmål eller tilbakemeldinger? Ta kontakt med:</h3>
+                    
+                                            	<div class="vcard">
+
+					<figure class="vcard__avatar">
+					    <img src="https://www.fn.no/var/globalis/storage/images/_aliases/employee_line/0/2/2/4/874220-9-nor-NO/Kjetil  ny.jpg"
+                	                	                	 
+                		alt="Kjetil Nordahl"
+                	                	 
+                		class="photo"
+                	                	/>
+			</figure>
+				
+					<h4 class="vcard__name  fn">Kjetil Nordahl</h4>
+				
+					<span class="vcard__title  role">Seniorrådgiver Øst</span> 
+				
+					<a	class="vcard__email  email"	href="mailto:kjetil.nordahl@fn.no">kjetil.nordahl@fn.no</a>
+				
+					<span class="vcard__phone  phone">22 86 84 13</span> 
+				
+				
+	</div>
+
+                                                </div>
+
+                            <div class="grid__pad">
+                    <h3>Abonner på vårt nyhetsbrev for lærere</h3>
+                    <form action="//www.us16.list-manage.com/subscribe/post?u=1ef2135a7016ab48b386f73da&amp;id=12a5c3e664" method="post" target="_blank">
+                                            <label class="input-wrap input-wrap--inverse newsletter-inverted">
+                            <input class="input-wrap__input newsletter-inverted" name="EMAIL" placeholder="Din epostadresse"/>
+                            <button class="input-wrap__button button" type="submit">Send</button>
+                        </label>
+                    </form>
+                </div>
+                    </div>
+    </div>
+    	</main>
+    	<!-- end content -->
+    	
+    	    
+    	<!-- start footer -->    	
+    	<section class="section section-newsletter">
+
+    <div class="grid">
+            
+            <h3>Abonner på nyhetsbrev:</h3>
+            <form action="//www.us16.list-manage.com/subscribe/post?u=1ef2135a7016ab48b386f73da&amp;id=25357d0f89" method="post" target="_blank" class="form-inline">
+                <label class="newsletter">
+                    <input class="input-wrap__input newsletter" name="EMAIL" placeholder="Din epostadresse"/>
+                </label>
+                <button class="button button--link" type="submit">Send</button>
+            </form>
+    
+            </div>
+
+</section>
+
+<footer class="site-footer">
+
+    <div class="grid">
+
+                                            		<nav class="nav-site" ng-class="{'is-toggled' : isToggled}">
+    <div class="grid__pad">
+			        <div class="nav-site__list">
+					            	<a class="nav-site__link "  href="/Undervisning">Undervisning</a>
+	            	            	<a class="nav-site__link "  href="/tema">Tema</a>
+	            	            	<a class="nav-site__link "  href="/Land">Land</a>
+	            	            	<a class="nav-site__link "  href="/Statistikk">Statistikk</a>
+	            	            	<a class="nav-site__link "  href="/Konflikter">Konflikter</a>
+	            	            	<a class="nav-site__link "  href="/Verdenskart">Verdenskart</a>
+	            	            	<a class="nav-site__link "  href="/om-fn">Om FN</a>
+	            	            	<a class="nav-site__link "  href="/Nyheter">Nyheter</a>
+	            	            	<a class="nav-site__link "  href="/om-oss">Om oss</a>
+	            	            	<a class="nav-site__link "  href="/om-oss/una-norway">English</a>
+	            	        </div>
+            </div>
+</nav>
+        
+        <div class="grid__col-6--md  grid__col-4--lg">
+            <div class="grid__pad">            
+            	            
+	                <h3>Kontakt</h3>
+	                <dl class="list-definitions">
+	                		                    	<dt>Adresse:</dt>
+	                    	<dd>Storgata 33 A, 0184  Oslo</dd>
+	                    
+                                                    <dt>E-post:</dt>
+                            <dd class="nav-social"><a class="nav-social__link" href="mailto:FN-sambandet@fn.no">FN-sambandet@fn.no</a></dd>
+                        	                    
+	                    	                    	<dt>Telefon:</dt>
+	                    	<dd>+47 22 86 84 00</dd>
+	                    	                    
+	                </dl>
+                            </div>
+        </div>
+
+        <div class="grid__col-6--md  grid__col-4--lg">
+
+            <div class="grid__pad">
+            	
+            	                	<h3>Om FN-sambandet</h3>
+                	<ul class="list-links">
+								                    <li class="list-links__item">
+                                	<a 	href="/om-oss/Ansatte" 
+		class="list-links__link" 
+		target="_self">
+					Ansatte
+			</a>
+
+		                    </li>
+	    						                    <li class="list-links__item">
+                                	<a 	href="/om-oss/Personvernerklaering" 
+		class="list-links__link" 
+		target="_self">
+					Personvernerklæring
+			</a>
+
+		                    </li>
+	    				                	</ul>
+            	
+            </div>
+
+        </div>
+
+        <div class="grid__col-6--md  grid__col-4--lg">
+
+            <div class="grid__pad">
+            		                <h3>Nyttige lenker</h3>
+	                <ul class="list-links">
+								                    <li class="list-links__item">
+		                        	<a 	href="http://www.fn-filuren.no/" 
+		class="list-links__link" 
+		target="_blank">
+		FN-filuren
+	</a>
+
+		                    </li>
+	    						                    <li class="list-links__item">
+		                        	<a 	href="http://www.un.org/en/index.html" 
+		class="list-links__link" 
+		target="_blank">
+		FNs offisielle hjemmeside
+	</a>
+
+		                    </li>
+	    					                </ul>
+                           </div>
+
+        </div>
+
+        
+        <div class="grid__col-6--md  grid__col-4--lg">
+
+            <div class="grid__pad">
+            	                    <h3>Følg oss på</h3>
+                    <ul class="social__media">
+                                                        
+    
+                
+    <li>
+        <a 	href="https://www.instagram.com/fnsambandet/" target="_self">
+                                        <img class="" src="/bundles/globalissite/images/icons/icon_instagram.svg">
+                    </a>
+    </li>
+
+                                                        
+    
+                
+    <li>
+        <a 	href="https://www.facebook.com/fnsambandet" target="_self">
+                                        <img class="" src="/bundles/globalissite/images/icons/icon_facebook.svg">
+                    </a>
+    </li>
+
+                                                        
+    
+                
+    <li>
+        <a 	href="https://www.youtube.com/user/fnsamband" target="_self">
+                                        <img class="" src="/bundles/globalissite/images/icons/icon_youtube.svg">
+                    </a>
+    </li>
+
+                                                        
+    
+                
+    <li>
+        <a 	href="https://twitter.com/FNsambandet" target="_self">
+                                        <img class="" src="/bundles/globalissite/images/icons/icon_twitter.svg">
+                    </a>
+    </li>
+
+                                            </ul>
+                            </div>
+
+        </div>
+
+    </div>
+
+    <div class="grid">
+
+        <div class="grid__pad">
+            <small class="site-footer__copyright">© FN-sambandet 2020</small>
+        </div>
+
+    </div>
+
+</footer>
+
+    	
+    	<!-- end footer -->
+    	
+        <!-- footer javascript -->
+    	    <script src="/js/29104dd.js?v=4ba7cff"></script>
+
+    	
+    	
+    	<!-- Keywords search and background images -->
+		
+		<script type="text/javascript">
+		var searchForLabel = "Søk etter ";
+	</script>
+
+			<div id="rotatingId" data-rotating="atomvåpen, fattigdom, fred, iran-konflikten, klimaendringer, menneskerettigheter, Sikkerhetsrådet"></div>
+		
+		
+
+    	
+    	    
+    	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+    	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    
+    		<!-- Background of PhotoSwipe. 
+             It's a separate element as animating opacity is faster than rgba(). -->
+    		<div class="pswp__bg"></div>
+    
+    		<!-- Slides wrapper with overflow:hidden. -->
+    		<div class="pswp__scroll-wrap">
+    
+    			<!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+    			<div class="pswp__container">
+    				<div class="pswp__item"></div>
+    				<div class="pswp__item"></div>
+    				<div class="pswp__item"></div>
+    			</div>
+    
+    			<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+    			<div class="pswp__ui pswp__ui--hidden">
+    
+    				<div class="pswp__top-bar">
+    
+    					<!--  Controls are self-explanatory. Order can be changed. -->
+    
+    					<div class="pswp__counter"></div>
+    
+    					<button class="pswp__button pswp__button--close"
+    						title="Close (Esc)"></button>
+    
+    					<button class="pswp__button pswp__button--share" title="Share"></button>
+    
+    					<button class="pswp__button pswp__button--fs"
+    						title="Toggle fullscreen"></button>
+    
+    					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+    
+    					<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+    					<!-- element will get class pswp__preloader--active when preloader is running -->
+    					<div class="pswp__preloader">
+    						<div class="pswp__preloader__icn">
+    							<div class="pswp__preloader__cut">
+    								<div class="pswp__preloader__donut"></div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    
+    				<div
+    					class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+    					<div class="pswp__share-tooltip"></div>
+    				</div>
+    
+    				<button class="pswp__button pswp__button--arrow--left"
+    					title="Previous (arrow left)"></button>
+    
+    				<button class="pswp__button pswp__button--arrow--right"
+    					title="Next (arrow right)"></button>
+    
+    				<div class="pswp__caption">
+    					<div class="pswp__caption__center"></div>
+    				</div>
+    
+    			</div>
+    		</div>
+    	</div>
+    
+    </body>
+</html>
